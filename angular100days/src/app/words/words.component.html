@@ -1,0 +1,13 @@
+<input type="text" placeholder="English" />
+<br />
+<input type="text" placeholder="Tiếng Việt" />
+<br />
+<br />
+<button>Thêm từ mới</button>
+
+<div *ngFor="let word of arrWords">
+  <h4 [ngStyle]="{ color: word.memorized ? 'blue' : 'yellow' }">
+    {{ word.en }}
+  </h4>
+  <p>{{ word.vn }}</p>
+</div>
